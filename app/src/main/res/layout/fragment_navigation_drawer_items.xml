@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#e2e2e2">
+    <LinearLayout
+        android:id="@+id/menu_item_quests"
+        style="@style/MenuItemLayoutStyle">
+        <ImageView
+           style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_quest_nor"
+            android:contentDescription="null"/>
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:gravity="center"
+            android:text="技术问答"/>
+    </LinearLayout>
+    <View style="@style/h_line"/>
+
+    <LinearLayout
+        style="@style/MenuItemLayoutStyle"
+        android:id="@+id/menu_item_opensoft">
+        <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_opensoft_nor"
+            android:contentDescription="null"/>
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:gravity="center"
+            android:text="开源软件"/>
+    </LinearLayout>
+    <View style="@style/h_line"/>
+
+    <LinearLayout
+        style="@style/MenuItemLayoutStyle"
+        android:id="@+id/menu_item_blog">
+        <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_blog_nor"
+            android:contentDescription="null"/>
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:gravity="center"
+            android:text="博客区"/>
+    </LinearLayout>
+    <View style="@style/h_line"/>
+
+    <LinearLayout
+        style="@style/MenuItemLayoutStyle"
+        android:id="@+id/menu_item_git">
+        <ImageView
+            style="@style/MenuItemImageViewStyle"
+            android:background="@drawable/drawer_menu_icon_gitapp_nor"
+            android:contentDescription="null"/>
+        <TextView
+            style="@style/MenuItemTextViewStyle"
+            android:gravity="center"
+            android:text="git客户端"/>
+    </LinearLayout>
+    <View style="@style/h_line"/>
+
+</LinearLayout>

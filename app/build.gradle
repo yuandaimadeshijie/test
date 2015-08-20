@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile files('libs/KJFrameForAndroid_v2.241.jar')
     compile 'com.jakewharton:butterknife:7.0.1'
+    /*compile 'com.ikimuhendis:ldrawer:0.1'*/
 }

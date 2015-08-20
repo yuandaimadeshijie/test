@@ -11,6 +11,7 @@
         android:layout_gravity="start"
         android:name="com.neuyuandaima.learnandroid.ui.NavigationDrawerFragment"/>
 
+
 </android.support.v4.widget.DrawerLayout>
 
 
