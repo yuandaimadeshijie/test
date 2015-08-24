@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
-import com.neuyuandaima.learnandroid.Activity.MainActivity;
+import com.neuyuandaima.learnandroid.activity.MainActivity;
 
 public class AppStart extends Activity implements Animation.AnimationListener{
 
