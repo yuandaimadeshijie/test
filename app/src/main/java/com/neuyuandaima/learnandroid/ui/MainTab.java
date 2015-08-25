@@ -1,12 +1,13 @@
 package com.neuyuandaima.learnandroid.ui;
 
 import com.neuyuandaima.learnandroid.R;
+import com.neuyuandaima.learnandroid.fragment.NewsViewPagerFragment;
 
 /**
  * Created by neuyuandaima on 2015/8/21.
  */
 public enum  MainTab {
-	NEWS(0,"综合", R.drawable.tab_icon_new);
+	NEWS(0,R.string.main_tab_name_news, R.drawable.tab_icon_new, NewsViewPagerFragment.class);
 	private int index;
 	private int resName;
 	private int resIcon;
