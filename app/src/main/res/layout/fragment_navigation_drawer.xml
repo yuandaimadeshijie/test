@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:background="?attr/layout_bg_normal">
     <com.neuyuandaima.learnandroid.widget.CustomerScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -10,5 +11,5 @@
         <include layout="@layout/fragment_navigation_drawer_items"/>
     </com.neuyuandaima.learnandroid.widget.CustomerScrollView>
 
-
+    <include layout="@layout/fragment_navigation_drawer_foot"/>
 </LinearLayout>

@@ -26,7 +26,7 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks
 									,View.OnTouchListener,TabHost.OnTabChangeListener{
 	private NavigationDrawerFragment mNavigationDrawerFragment;
-	 @Bind(android.R.id.tabhost)MyFragmentTabHost mTabHost;
+	@Bind(android.R.id.tabhost)MyFragmentTabHost mTabHost;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -60,11 +60,9 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerF
 			View indicator= LayoutInflater.from(getApplicationContext()).inflate(R.layout.tab_indicator, null);
 			TextView title=(TextView)indicator.findViewById(R.id.tab_title);
 			Drawable drawable=this.getResources().getDrawable(mainTab.getResIcon());
-			title.setCompoundDrawablesWithIntrinsicBounds(null,drawable,null,null);
-			if (i==2){
-				indicator.setVisibility(View.INVISIBLE);
-				mTabHost.setmNoTabChangedTag(getString(mainTab.getResName()));
-			}
+			drawable.setBounds(0,0,drawable.getIntrinsicWidth()-50,drawable.getIntrinsicHeight()-50);
+			//title.setCompoundDrawablesWithIntrinsicBounds(null,drawable,null,null);
+			title.setCompoundDrawables(null,drawable,null,null);
 			title.setText(getString(mainTab.getResName()));
 			tab.setIndicator(indicator);
 			tab.setContent(new TabHost.TabContentFactory() {

@@ -2,6 +2,7 @@ package com.neuyuandaima.learnandroid.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -12,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.neuyuandaima.learnandroid.R;
-import com.neuyuandaima.learnandroid.base.BaseFragment;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
 /**
  * Created by neuyuandaima on 2015/8/19.
  */
-public class NavigationDrawerFragment extends BaseFragment implements View.OnClickListener{
+public class NavigationDrawerFragment extends Fragment implements View.OnClickListener{
 	private View mDrawerListView;
 	private DrawerLayout mDrawerLayout;
 	private View mFragmentContainerView;
@@ -53,9 +53,18 @@ public class NavigationDrawerFragment extends BaseFragment implements View.OnCli
 		mDrawerListView=inflater.inflate(R.layout.fragment_navigation_drawer,container,false);
 		mDrawerListView.setOnClickListener(this);
 		ButterKnife.bind(this, mDrawerListView);
-		initView(mDrawerListView);
 		return mDrawerListView;
 	}
+
+	@Override
+	public void onViewCreated(View view, Bundle savedInstanceState) {
+		super.onViewCreated(view, savedInstanceState);
+		mMenu_item_bolg.setOnClickListener(this);
+		mMenu_item_git.setOnClickListener(this);
+		mMenu_item_opensoft.setOnClickListener(this);
+		mMenu_item_quests.setOnClickListener(this);
+	}
+
 	public void openDrawerMenu() {
 		mDrawerLayout.openDrawer(mFragmentContainerView);
 	}
@@ -74,16 +83,6 @@ public class NavigationDrawerFragment extends BaseFragment implements View.OnCli
 			}
 		}, 800);
 	}
-
-	@Override
-	public void initView(View view) {
-		super.initView(view);
-		mMenu_item_bolg.setOnClickListener(this);
-		mMenu_item_git.setOnClickListener(this);
-		mMenu_item_opensoft.setOnClickListener(this);
-		mMenu_item_quests.setOnClickListener(this);
-	}
-
 	public void setUp(int fragmentId,DrawerLayout drawerLayout){
 		mFragmentContainerView=getActivity().findViewById(fragmentId);
 		mDrawerLayout=drawerLayout;

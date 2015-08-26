@@ -14,5 +14,6 @@
         <item name="android:textColorHint">@color/day_edit_hit_color</item>
         <item name="lineColor">@color/day_line_color</item>
         <item name="windows_bg">@color/day_windows_bg</item>
+        <item name="layout_bg_normal">@color/day_layout_bg_normal</item>
     </style>
 </resources>

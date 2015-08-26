@@ -5,6 +5,8 @@
     <dimen name="navigation_drawer_width">240dp</dimen>
 
     <dimen name="space_10">10dp</dimen>
+    <dimen name="space_16">10dp</dimen>
     <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
 
 </resources>
