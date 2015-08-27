@@ -1,7 +1,9 @@
 package com.neuyuandaima.learnandroid.ui;
 
 import com.neuyuandaima.learnandroid.R;
+import com.neuyuandaima.learnandroid.fragment.MeFragment;
 import com.neuyuandaima.learnandroid.fragment.NewsViewPagerFragment;
+import com.neuyuandaima.learnandroid.fragment.TweensViewPagerFragment;
 
 
 public enum MainTab {
@@ -10,14 +12,14 @@ public enum MainTab {
 			NewsViewPagerFragment.class),
 
 	TWEET(1, R.string.main_tab_name_tweet, R.drawable.tab_icon_tweet,
-			NewsViewPagerFragment.class),
+			TweensViewPagerFragment.class),
 
 
 	EXPLORE(2, R.string.main_tab_name_explore, R.drawable.tab_icon_explore,
 			NewsViewPagerFragment.class),
 
 	ME(3, R.string.main_tab_name_my, R.drawable.tab_icon_me,
-			NewsViewPagerFragment.class);
+			MeFragment.class);
 
 	private int idx;
 	private int resName;
