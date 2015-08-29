@@ -19,4 +19,12 @@
 
     <string name="menu_theme">夜间</string>
     <string name="menu_setting">设置</string>
+
+
+    <string name="id_label">标题是：</string>
+    <string name="id_value">[id]</string>
+    <string name="content_label">内容是：</string>
+    <string name="content_value">[content]</string>
+    <string name="author_label">作者是：</string>
+    <string name="type_label">类型是：</string>
 </resources>
